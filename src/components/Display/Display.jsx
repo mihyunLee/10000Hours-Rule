@@ -1,5 +1,6 @@
 import React from "react";
 import "./Display.css";
+import Button from "../../common/Button/Button";
 
 export default function Display() {
   return (
@@ -14,7 +15,10 @@ export default function Display() {
           합니다! :)
         </p>
       </div>
-      {/* 훈련하러가기, 공유하기 버튼 */}
+      <div className="display-btns">
+        <Button>훈련하러 가기 GO!GO!</Button>
+        <Button variant={"share"}>공유하기</Button>
+      </div>
     </div>
   );
 }

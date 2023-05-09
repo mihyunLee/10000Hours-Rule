@@ -16,3 +16,10 @@
   font-size: 72px;
   padding: 0 12px;
 }
+
+.display-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
