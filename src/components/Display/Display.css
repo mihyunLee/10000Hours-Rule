@@ -1,0 +1,18 @@
+.display {
+  margin-top: 147px;
+}
+
+.display-content {
+  font-size: 24px;
+  margin-bottom: 127px;
+}
+
+.display-content p:first-child {
+  margin-bottom: 17px;
+}
+
+.user-response {
+  font-family: "GmarketSansBold";
+  font-size: 72px;
+  padding: 0 12px;
+}

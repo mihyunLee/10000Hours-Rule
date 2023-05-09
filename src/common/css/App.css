@@ -1,7 +1,23 @@
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
 .container {
   margin: 0 auto;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 70px;
   text-align: center;
   background-color: #5b2386;
   color: #fff;
+}
+
+:root {
+  font-family: "GmarketSansMedium";
 }

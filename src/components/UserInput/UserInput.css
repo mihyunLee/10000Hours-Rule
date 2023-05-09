@@ -1,0 +1,39 @@
+input {
+  box-sizing: border-box;
+  padding: 16px 40px;
+  font-size: 24px;
+  width: 228px;
+  margin: 0 17px;
+  border-radius: 7px;
+}
+
+input::placeholder {
+  color: rgba(186, 188, 190, 1);
+  text-align: center;
+}
+
+.inp-form p {
+  margin-bottom: 27px;
+}
+
+.inp-form label {
+  font-size: 24px;
+}
+
+.inp-box {
+  margin-bottom: 115px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+/* button */
+[class^="btn"] {
+  background-color: rgba(252, 238, 33, 1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 56px;
+  padding: 21px 49px;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: #5b2386;
+}
