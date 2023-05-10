@@ -9,6 +9,7 @@ export default function Display({ data }) {
 
   return (
     <div className="display">
+      <h2 className="a11y-hidden">1만 시간 결과 화면</h2>
       <div className="display-content">
         <p>
           당신은 <span className="user-response">{data.action}</span>전문가가

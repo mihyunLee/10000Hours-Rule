@@ -31,6 +31,7 @@ export default function UserInput({ handleSubmit }) {
   return (
     <>
       <form className="inp-form" onSubmit={onSubmit}>
+        <h2 className="a11y-hidden">훈련 내용 입력 폼</h2>
         <div className="inp-box">
           <label>
             나는

@@ -15,7 +15,7 @@ export default function Header() {
         </div>
       </header>
       <article>
-        <h1 className="a11y-hidden">1만 시간의 법칙 설명</h1>
+        <h2 className="a11y-hidden">1만 시간의 법칙 설명</h2>
         <p className="article-tit">
           "연습은 어제의 당신보다 당신을 더 낫게 만든다."
         </p>
