@@ -2,7 +2,7 @@ import React from "react";
 import "./Display.css";
 import Button from "../../common/Button/Button";
 
-export default function Display({ data }) {
+export default function Display({ data, handleModalOpen }) {
   const convertTime = parseInt(
     10000 / parseInt(data.time.replace(/[^0-9]/g, ""))
   );
@@ -21,7 +21,7 @@ export default function Display({ data }) {
         </p>
       </div>
       <div className="display-btns">
-        <Button>훈련하러 가기 GO!GO!</Button>
+        <Button handler={handleModalOpen}>훈련하러 가기 GO!GO!</Button>
         <Button variant={"share"}>공유하기</Button>
       </div>
     </div>
