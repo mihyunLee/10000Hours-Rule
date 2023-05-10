@@ -26,3 +26,18 @@ input::placeholder {
   flex-direction: column;
   gap: 27px;
 }
+
+.inp-box + button {
+  position: relative;
+}
+
+.inp-box + button::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 72px;
+  background: url("../../../public/assets/click.png") no-repeat;
+  position: absolute;
+  right: -77px;
+  top: 23px;
+}

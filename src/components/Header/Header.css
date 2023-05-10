@@ -21,30 +21,19 @@
   line-height: 24px;
   margin: 78px auto 102px auto;
   position: relative;
-  width: 373px;
 }
 
-/* FIXME: 왜 가상요소 밖 쪽으로 생기지 않는걸까.. */
-.article-desc::before,
 .article-desc::after {
-  content: '"';
+  content: "";
   display: block;
-  width: 46px;
-  height: 1em;
-  color: rgba(252, 238, 33, 0.3);
-  font-family: "GmarketSansBold";
-  font-size: 96px;
+  width: 486px;
+  height: 2em;
+  background: url("../../../public/assets/quotes.png") no-repeat center /
+    contain;
   position: absolute;
-  top: 40px;
-  bottom: 0;
-}
-
-.article-desc::before {
-  left: -14px;
-}
-
-.article-desc::after {
-  right: -14px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .article-desc strong {
