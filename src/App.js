@@ -13,8 +13,8 @@ function App() {
 
   const handleSubmit = (inputData) => {
     setData({
-      action: inputData.action,
-      time: inputData.time,
+      expert: inputData.expert,
+      trainingTime: inputData.trainingTime,
     });
     setIsSubmit(true);
   };

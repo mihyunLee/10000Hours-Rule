@@ -4,7 +4,7 @@ import Button from "../../common/Button/Button";
 
 export default function Display({ data, handleModalOpen }) {
   const convertTime = parseInt(
-    10000 / parseInt(data.time.replace(/[^0-9]/g, ""))
+    10000 / parseInt(data.trainingTime.replace(/[^0-9]/g, ""))
   );
 
   return (
@@ -12,7 +12,7 @@ export default function Display({ data, handleModalOpen }) {
       <h2 className="a11y-hidden">1만 시간 결과 화면</h2>
       <div className="display-content">
         <p>
-          당신은 <span className="user-response">{data.action}</span>전문가가
+          당신은 <span className="user-response">{data.expert}</span>전문가가
           되기 위해서 <br />
         </p>
         <p>

@@ -3,27 +3,27 @@ import "./UserInput.css";
 import Button from "../../common/Button/Button";
 
 export default function UserInput({ handleSubmit }) {
-  const [action, setAction] = useState("");
-  const [time, setTime] = useState("");
+  const [expert, setExpert] = useState("");
+  const [trainingTime, setTrainingTime] = useState("");
 
   const handleActionInput = (e) => {
-    setAction(e.target.value);
+    setExpert(e.target.value);
   };
 
   const handleTimeInput = (e) => {
-    setTime(e.target.value);
+    setTrainingTime(e.target.value);
   };
 
   const onResetForm = () => {
-    setAction("");
-    setTime("");
+    setExpert("");
+    setTrainingTime("");
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (action && time > 0 && time < 25) {
-      handleSubmit({ action: action, time: time });
+    if (expert && trainingTime > 0 && trainingTime < 25) {
+      handleSubmit({ expert: expert, trainingTime: trainingTime });
       onResetForm();
     }
   };
@@ -39,7 +39,7 @@ export default function UserInput({ handleSubmit }) {
               type="text"
               className="inp-action"
               onChange={handleActionInput}
-              value={action}
+              value={expert}
               placeholder="예)프로그래밍"
               required
             />
@@ -53,7 +53,7 @@ export default function UserInput({ handleSubmit }) {
               max="24"
               className="inp-time"
               onChange={handleTimeInput}
-              value={time}
+              value={trainingTime}
               placeholder="예)5"
               required
             />
