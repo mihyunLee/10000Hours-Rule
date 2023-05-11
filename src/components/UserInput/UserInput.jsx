@@ -22,7 +22,7 @@ export default function UserInput({ handleSubmit }) {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (action && time) {
+    if (action && time > 0 && time < 25) {
       handleSubmit({ action: action, time: time });
       onResetForm();
     }
@@ -36,6 +36,7 @@ export default function UserInput({ handleSubmit }) {
           <label>
             나는
             <input
+              type="text"
               className="inp-action"
               onChange={handleActionInput}
               value={action}
@@ -47,10 +48,13 @@ export default function UserInput({ handleSubmit }) {
           <label>
             그래서 앞으로 매일 하루에
             <input
+              type="number"
+              min="1"
+              max="24"
               className="inp-time"
               onChange={handleTimeInput}
               value={time}
-              placeholder="예)5시간"
+              placeholder="예)5"
               required
             />
             시간씩 훈련할 것이다.
